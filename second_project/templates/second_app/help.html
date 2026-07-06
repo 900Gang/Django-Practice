@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help App</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: blue;
+        }
+        div.container {
+            margin: 20px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 auto;
+            min-width: 300px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+ </head>
+
+    <body>
+        <h1 style="color: blue;">Welcome to Help App</h1>
+        <div class="container">
+            {{insert}}
+            <img src="{% static 'images/gojo.webp' %}" alt="GOJO Image" style="max-width: 100%; height: auto; margin-top: 20px;">
+        </div>
+    </body>
+</html>
