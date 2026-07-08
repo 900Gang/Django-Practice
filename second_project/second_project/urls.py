@@ -18,11 +18,14 @@ from django import views
 from django.contrib import admin
 from django.urls import path,re_path
 from django.conf.urls import include
-from second_app import views
+from second_app import views,forms
 
 urlpatterns = [
     re_path(r'^$',views.index,name='index'),
     re_path(r'^help/',include('second_app.urls')),
+    re_path(r'^acc_table/$',views.acc_table,name='acc_table'),
+    re_path(r'^use/$',views.use,name='use'),
+    re_path(r'^form/$',views.form_name_view,name='form_name_view'),
     path('admin/', admin.site.urls),
     
 ]
