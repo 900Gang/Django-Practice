@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <style> 
+        body{
+            background-color: aquamarine;
+            height: 100vh;
+            display: flex;
+            margin: 0%;
+            padding: 0%;
+            justify-content: center;
+        }
+        div .container{
+            display: flex;
+            width: 50%;
+            height: 50%;
+            background-color: antiquewhite;
+            margin: 3px;
+            padding: 9px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+
+        }
+        div .Second{
+            display: flex;
+            background-color: brown;
+            color: aqua;
+            width: auto;
+            height: auto;
+            margin: 3px;
+            padding: 10px;
+            justify-content: center;
+            border: 5px solid red;
+        }
+        div>form>.btn{
+            display: flex;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 6px;
+            color: aliceblue;
+            background-color: brown;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">   
+        <p>User sign up Here!👤👤</p>
+        <div class="Second">
+            <form method="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" class="btn btn1" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
