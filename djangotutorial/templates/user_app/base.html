@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <nav class="navabar navbar-default navbar-static-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li ><a class="navbar-brand" href="{% url 'index' %}">Home</a></li>
+                <li ><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+                <li ><a class="navbar-link" href="{% url 'user_app:register' %}">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block body_block %}
+    {% endblock %}
+</body>
+</html>
