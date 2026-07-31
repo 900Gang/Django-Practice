@@ -21,6 +21,7 @@ from user_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("polls/",include("polls.urls")),
-    path("^$",views.index,name='index'),
+    path('',views.index,name='index'),
     path('user_app/',include('user_app.urls')),
+    path('logout/',views.user_logout,name='logout'),
 ]

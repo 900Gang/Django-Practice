@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
-    'user_app,'
+    'user_app',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +134,5 @@ STATICFILES_DIR=[
 #media
 MEDIA_ROOT=MEDIA_DIR
 MEDIA_URL='/media/'
+
+LOGIN_URL='/user_app/user_login'
